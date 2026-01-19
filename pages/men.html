@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Watches - TimeX</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/css/category.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-wrapper">
+                    <h1 class="logo"><a href="../index.html"><img src="../src/images/timex-logo.png" alt="TimeX" class="logo-img"></a></h1>
+                    
+                    <div class="search-container">
+                        <button class="search-icon" aria-label="Search">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                        <input type="text" class="search-input" placeholder="Search product, style, & more...">
+                        <button class="voice-search" aria-label="Voice search">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                                <line x1="12" y1="19" x2="12" y2="23"></line>
+                                <line x1="8" y1="23" x2="16" y2="23"></line>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="header-actions">
+                        <button class="icon-btn" aria-label="Account">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </button>
+                        <button class="icon-btn" aria-label="Wishlist">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                        <button class="icon-btn cart-btn" aria-label="Cart">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            <span class="cart-count">0</span>
+                        </button>
+                        <button class="icon-btn" aria-label="Track Order">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="1" y="3" width="15" height="13"></rect>
+                                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <button class="mobile-menu-btn" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-nav">
+            <div class="container">
+                <nav class="main-nav">
+                    <a href="men.html" class="nav-link active">MEN</a>
+                    <a href="women.html" class="nav-link">WOMEN</a>
+                    <a href="../index.html#products" class="nav-link">WATCHES</a>
+                    <a href="../index.html#products" class="nav-link">TRENDING</a>
+                    <a href="../index.html#products" class="nav-link sale-link">SALES</a>
+                    <a href="#" class="nav-link">MORE</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Category Hero -->
+    <section class="category-hero">
+        <div class="container">
+            <div class="category-hero-content">
+                <h1>Men's Watch Collection</h1>
+                <p>Discover our premium collection of men's watches - from classic analog timepieces to modern digital smartwatches</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="../index.html">Home</a>
+            <span>/</span>
+            <span>Men's Watches</span>
+        </div>
+    </div>
+
+    <!-- Category Filters & Products -->
+    <section class="category-section">
+        <div class="container">
+            <div class="category-layout">
+                <!-- Sidebar Filters -->
+                <aside class="category-sidebar">
+                    <div class="filter-group">
+                        <h3>Category</h3>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="radio" name="subcategory" value="all" checked>
+                                <span>All Watches</span>
+                                <span class="count" id="countAll">9</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="subcategory" value="analog">
+                                <span>Analog Watches</span>
+                                <span class="count" id="countAnalog">6</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="subcategory" value="digital">
+                                <span>Digital Watches</span>
+                                <span class="count" id="countDigital">3</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Price Range</h3>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" name="price" value="0-5000">
+                                <span>Under ₹5,000</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="price" value="5000-10000">
+                                <span>₹5,000 - ₹10,000</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="price" value="10000-20000">
+                                <span>₹10,000 - ₹20,000</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="price" value="20000-50000">
+                                <span>Above ₹20,000</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Sort By</h3>
+                        <select class="sort-select" id="sortSelect">
+                            <option value="featured">Featured</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="name">Name: A to Z</option>
+                        </select>
+                    </div>
+
+                    <button class="btn btn-secondary btn-block" onclick="clearFilters()">Clear Filters</button>
+                </aside>
+
+                <!-- Products Grid -->
+                <div class="category-content">
+                    <div class="category-header">
+                        <h2>Men's Watches <span id="productCount">(9 Products)</span></h2>
+                        <div class="view-toggle">
+                            <button class="view-btn active" data-view="grid">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <rect x="3" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="3" width="7" height="7"></rect>
+                                    <rect x="3" y="14" width="7" height="7"></rect>
+                                    <rect x="14" y="14" width="7" height="7"></rect>
+                                </svg>
+                            </button>
+                            <button class="view-btn" data-view="list">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="8" y1="6" x2="21" y2="6"></line>
+                                    <line x1="8" y1="12" x2="21" y2="12"></line>
+                                    <line x1="8" y1="18" x2="21" y2="18"></line>
+                                    <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                                    <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                                    <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="products-grid" id="categoryProducts">
+                        <!-- Products will be loaded here dynamically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart" aria-label="Close cart">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-price">₹0.00</span>
+            </div>
+            <button class="btn btn-primary btn-block">Checkout</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="footer-title">TimeX</h4>
+                    <p class="footer-text">Your destination for premium timepieces and luxury watches.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Collections</h4>
+                    <ul class="footer-links">
+                        <li><a href="men.html">Men's Watches</a></li>
+                        <li><a href="women.html">Women's Watches</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p class="footer-text">Subscribe to get special offers and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" class="newsletter-input">
+                        <button type="submit" class="btn btn-secondary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TimeX. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../src/js/script.js"></script>
+    <script src="../src/js/category.js"></script>
+    <script>
+        // Set category for this page
+        window.currentCategory = 'men';
+    </script>
+</body>
+</html>
